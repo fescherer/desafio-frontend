@@ -44,8 +44,23 @@
 
 .btn-value-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.btn-value-header button {
+  all: unset;
+  box-sizing: border-box;
+  font-size: 0.6rem;
+  font-weight: normal;
+  border: 1px solid #313131;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+}
+
+.btn-value-header button:hover {
+  background: #313131;
 }
 
 .loader-container {
