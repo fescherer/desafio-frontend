@@ -1,7 +1,14 @@
-import Table from './components/table';
+import { Header } from './components/Header';
+import Table from './components/Table';
+import './style.css';
 
 function App() {
-  return <Table />;
+  return (
+    <>
+      <Header />
+      <Table />
+    </>
+  );
 }
 
 export default App;

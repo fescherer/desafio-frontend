@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1080px;
+}
+
+#income {
+  border-collapse: collapse;
+}
+
+#income td,
+#income th {
+  border: 1px solid #313131;
+  padding: 1rem;
+  max-width: 400px;
+}
+
+#income tr:nth-child(even) {
+  background-color: #181818;
+}
+
+#income th {
+  text-align: left;
+  background-color: #181818;
+}
+
+.input {
+  all: unset;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  width: 100%;
+  border: 1px solid #181818;
+  font-size: 0.9rem;
+  background-color: #181818;
+}
+
+.input:focus,
+.input:hover,
+.input:not(:placeholder-shown) {
+  outline: #313131 3px solid;
+}
+
+.btn-value-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.loader-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #181818 #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
